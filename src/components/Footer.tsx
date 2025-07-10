@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', name: 'GitHub' },
-    { icon: Linkedin, href: '#', name: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:krishsharma1037@gmail.com', name: 'Email' }
+    { icon: Github, href: 'https://github.com/krish1037', name: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/krish-sharma-1ba645301/', name: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:krishsharma1037@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Krish%2C%20I%20would%20like%20to%20connect%20with%20you%20regarding...', name: 'Email' }
   ];
 
   return (

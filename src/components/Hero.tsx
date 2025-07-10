@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import profileImg from '../pic/WhatsApp Image 2024-10-13 at 11.52.33_b21d52bb - Copy.jpg';
 import { motion, useAnimation } from 'framer-motion';
 import { Download, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, ArrowRight, Terminal } from 'lucide-react';
 
@@ -53,15 +54,13 @@ const Hero: React.FC = () => {
     }
   };
 
+  // Make the right column static (no slide-in animation)
   const rightVariants = {
-    hidden: { x: 100, opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
-      x: 0,
       opacity: 1,
       transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10
+        duration: 1
       }
     }
   };
@@ -156,7 +155,7 @@ const Hero: React.FC = () => {
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   fontStyle: 'italic',
-                  background: 'linear-gradient(45deg, #00d4ff, #9d4edd, #4ecdc4, #00d4ff)',
+                  background: 'linear-gradient(45deg,rgb(175, 238, 250),rgb(202, 202, 202),rgb(202, 236, 233), #00d4ff)',
                   backgroundSize: '300% 300%',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
@@ -326,8 +325,8 @@ const Hero: React.FC = () => {
               transition={{ delay: 3, duration: 0.8 }}
             >
               {[
-                { icon: Github, href: "#", color: "from-gray-600 to-gray-800" },
-                { icon: Linkedin, href: "#", color: "from-blue-600 to-blue-800" }
+                { icon: Github, href: "https://github.com/krish1037", color: "from-gray-600 to-gray-800" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/krish-sharma-1ba645301/", color: "from-blue-600 to-blue-800" }
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -366,9 +365,7 @@ const Hero: React.FC = () => {
             {/* Cosmic Profile Image */}
             <motion.div
               className="relative"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 1.5 }}
+              // Removed initial/animate for static layout
             >
               <motion.div
                 className="relative w-80 h-80 mx-auto"
@@ -382,7 +379,7 @@ const Hero: React.FC = () => {
                     animate={{
                       boxShadow: [
                         "0 0 30px rgba(0,212,255,0.4), 0 0 60px rgba(157,78,221,0.3)",
-                        "0 0 50px rgba(157,78,221,0.6), 0 0 80px rgba(0,212,255,0.4)",
+                        "0 0 50px rgba(237, 35, 153, 0.6), 0 0 80px rgba(0,212,255,0.4)",
                         "0 0 30px rgba(0,212,255,0.4), 0 0 60px rgba(157,78,221,0.3)"
                       ]
                     }}
@@ -392,7 +389,7 @@ const Hero: React.FC = () => {
                     }}
                   >
                     <img
-                      src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                      src={profileImg}
                       alt="Krish Profile"
                       className="w-full h-full object-cover rounded-full relative z-10"
                     />
@@ -470,14 +467,12 @@ const Hero: React.FC = () => {
             {/* Cosmic Contact Information Cards */}
             <motion.div
               className="space-y-4 w-full max-w-md"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2.5, duration: 0.8 }}
+              // Removed initial/animate for static layout
             >
               {[
-                { icon: Mail, text: "krishsharma1037@gmail.com", href: "mailto:krishsharma1037@gmail.com", color: "from-red-500 to-pink-500" },
+                { icon: Mail, text: "krishsharma1037@gmail.com", href: "#contact", color: "from-red-500 to-pink-500" },
                 { icon: Phone, text: "+91 9214589991", href: "tel:+919214589991", color: "from-green-500 to-teal-500" },
-                { icon: MapPin, text: "Jaipur, Rajasthan, India", href: "#", color: "from-blue-500 to-purple-500" }
+                { icon: MapPin, text: "Jaipur, Rajasthan, India", href: "https://www.google.co.in/maps/place/124%2F349,+Sector+12,+Mansarovar,+Jaipur,+Rajasthan+302020/@26.8427489,75.7664836,17z/data=!3m1!4b1!4m6!3m5!1s0x396db5990a8b6451:0x4d76115ff28c5b7d!8m2!3d26.8427489!4d75.7690585!16s%2Fg%2F11c267nxrr?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D", color: "from-blue-500 to-purple-500" }
               ].map((item, index) => (
                 <motion.a
                   key={index}

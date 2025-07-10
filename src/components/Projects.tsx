@@ -80,16 +80,16 @@ const Projects: React.FC = () => {
     },
     {
       id: 6,
-      title: "Tour Management System",
-      description: "A comprehensive tour and travel management system with booking capabilities, itinerary planning, payment processing, and customer management features.",
-      technologies: ["React", "Node.js", "MySQL", "Express.js", "PayPal API", "Leaflet"],
-      image: "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      title: "Payment Gateway Integration",
+      description: "A secure and robust payment gateway solution built with Node.js and Express. Features include seamless payment processing, database integration for transaction records, and Razorpay API for real-time payments. Designed for e-commerce and SaaS platforms requiring reliable online transactions.",
+      technologies: ["Node.js", "Express.js", "MongoDB", "Razorpay API", "REST API"],
+      image: "https://images.pexels.com/photos/4968384/pexels-photo-4968384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       category: "fullstack",
       liveUrl: "#",
       githubUrl: "#",
       featured: false,
       status: "Completed",
-      year: "2023"
+      year: "2024"
     }
   ];
 

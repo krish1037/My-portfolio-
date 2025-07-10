@@ -16,7 +16,7 @@ import {
   MessageSquare,
   FileText
 } from 'lucide-react';
-
+emailjs.init('HhCBq22rBMC2STz_o'); // Initialize EmailJS with your user ID
 interface FormData {
   name: string;
   email: string;
@@ -47,15 +47,15 @@ const Contact: React.FC = () => {
     try {
       // Initialize EmailJS (you'll need to set up your service ID, template ID, and user ID)
       await emailjs.send(
-        'your_service_id', // Replace with your EmailJS service ID
-        'your_template_id', // Replace with your EmailJS template ID
+        'cheetah_01', //your EmailJS service ID
+        'template_s295hks', //  your EmailJS template ID
         {
           from_name: data.name,
           from_email: data.email,
           subject: data.subject,
           message: data.message,
         },
-        'your_user_id' // Replace with your EmailJS user ID
+        'HhCBq22rBMC2STz_o' //  your EmailJS user ID denoted as public key of uid
       );
 
       setSubmitStatus('success');
@@ -110,7 +110,7 @@ const Contact: React.FC = () => {
       icon: MapPin,
       title: "Location",
       value: "Jaipur, Rajasthan, India",
-      link: "#",
+      link: "https://www.google.co.in/maps/place/124%2F349,+Sector+12,+Mansarovar,+Jaipur,+Rajasthan+302020/@26.8427489,75.7664836,17z/data=!3m1!4b1!4m6!3m5!1s0x396db5990a8b6451:0x4d76115ff28c5b7d!8m2!3d26.8427489!4d75.7690585!16s%2Fg%2F11c267nxrr?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D",
       color: "from-purple-500 to-pink-500"
     }
   ];
@@ -119,13 +119,13 @@ const Contact: React.FC = () => {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/in/krish-sharma-1ba645301/",
       color: "hover:text-blue-400"
     },
     {
       icon: Github,
       name: "GitHub",
-      url: "#",
+      url: "https://github.com/krish1037",
       color: "hover:text-gray-400"
     }
   ];

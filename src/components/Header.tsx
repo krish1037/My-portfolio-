@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 ease: "linear"
               }}
             >
-              KRISH
+              
             </motion.div>
             
             {/* Glowing Background */}
