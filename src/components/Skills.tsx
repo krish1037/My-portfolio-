@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
         { name: "React", level: 70, color: "#61DAFB" },
         { name: "JavaScript", level: 75, color: "#F7DF1E" },
         { name: "HTML/CSS", level: 80, color: "#E34F26" },
-        { name: "TypeScript", level: 60, color: "#3178C6" },
+        //{ name: "TypeScript", level: 60, color: "#3178C6" },
       ]
     },
     {
@@ -39,8 +39,9 @@ const Skills: React.FC = () => {
       skills: [
         { name: "Node.js", level: 75, color: "#339933" },
         { name: "Python", level: 80, color: "#3776AB" },
-        { name: "PHP", level: 70, color: "#777BB4" },
-        { name: "Express.js", level: 60, color: "#000000" },
+        { name: "Express.js", level: 60, color: "#000000" }
+       // { name: "PHP", level: 70, color: "#777BB4" },
+       ,
       ]
     },
     {
@@ -51,7 +52,7 @@ const Skills: React.FC = () => {
         { name: "MongoDB", level: 65, color: "#47A248" },
         { name: "MySQL", level: 85, color: "#4479A1" },
         { name: "PostgreSQL", level: 75, color: "#336791" },
-        { name: "Redis", level: 70, color: "#DC382D" },
+       // { name: "Redis", level: 70, color: "#DC382D" },
       ]
     },
     {
@@ -59,10 +60,10 @@ const Skills: React.FC = () => {
       icon: Brain,
       color: "from-orange-400 to-red-500",
       skills: [
-        { name: "TensorFlow", level: 75, color: "#FF6F00" },
-        { name: "PyTorch", level: 70, color: "#FF3366" },
+        { name: "LangChain", level: 75, color: "#FF6F00" },
+        { name: "Tensorflow-Keras", level: 70, color: "#FF3366" },
         { name: "Scikit-learn", level: 80, color: "#F7931E" },
-        { name: "OpenAI API", level: 85, color: "#412991" },
+        { name: "GenAI", level: 85, color: "#412991" },
       ]
     },
     {
@@ -71,7 +72,7 @@ const Skills: React.FC = () => {
       color: "from-yellow-400 to-orange-500",
       skills: [
         { name: "Git", level: 90, color: "#F05032" },
-        { name: "Docker", level: 70, color: "#2496ED" },
+        { name: "Docker", level: 60, color: "#2496ED" },
         { name: "AWS", level: 70, color: "#232F3E" },
         { name: "Figma", level: 80, color: "#F24E1E" },
       ]
@@ -84,7 +85,7 @@ const Skills: React.FC = () => {
         { name: "Leadership", level: 85, color: "#8B5CF6" },
         { name: "Problem Solving", level: 70, color: "#06B6D4" },
         { name: "Communication", level: 75, color: "#10B981" },
-        { name: "Teamwork", level: 0, color: "#F59E0B" },
+        { name: "Teamwork", level: 60, color: "#F59E0B" },
       ]
     }
   ];

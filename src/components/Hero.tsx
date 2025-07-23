@@ -65,6 +65,16 @@ const Hero: React.FC = () => {
     }
   };
 
+  // Add this function inside the Hero component
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = profileImg;
+    link.download = 'Resume-Krish-Sharma.jpg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Cosmic Code Matrix Effects */}
@@ -306,6 +316,7 @@ const Hero: React.FC = () => {
                   boxShadow: "0 0 30px rgba(0,212,255,0.5)"
                 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={handleDownloadResume}
               >
                 <motion.div
                   className="absolute inset-0 bg-cyan-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"

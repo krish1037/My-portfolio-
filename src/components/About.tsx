@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Award, Target, Users, Code } from 'lucide-react';
+import aboutImg from '../pic/WhatsApp Image 2024-10-13 at 11.52.38_1715998c.jpg';
 
 const About: React.FC = () => {
   const [ref, inView] = useInView({
@@ -25,7 +26,6 @@ const About: React.FC = () => {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
         stiffness: 100,
         damping: 10,
       }
@@ -34,7 +34,7 @@ const About: React.FC = () => {
 
   const achievements = [
     { icon: Code, number: "10+", label: "Projects Completed" },
-    { icon: Award, number: "5+", label: "Certifications" },
+    { icon: Award, number: "5+", label: "Certificate" },
     { icon: Users, number: "2", label: "Internships" },
     { icon: Target, number: "100%", label: "Dedication" },
   ];
