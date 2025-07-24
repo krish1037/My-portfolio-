@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Award, Target, Users, Code } from 'lucide-react';
-import aboutImg from '../pic/WhatsApp Image 2024-10-13 at 11.52.38_1715998c.jpg';
+import aboutImg from '../pic/about me  .jpg';
 
 const About: React.FC = () => {
   const [ref, inView] = useInView({
@@ -80,9 +80,10 @@ const About: React.FC = () => {
                 }}
               />
               <img
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src={aboutImg}
                 alt="About Krish"
-                className="relative w-full h-96 object-cover rounded-2xl shadow-2xl"
+                className="relative w-full h-[22rem] max-h-[24rem] object-cover rounded-2xl shadow-2xl border-4 border-cyan-500/20 bg-black"
+                style={{ background: '#222' }}
               />
             </div>
           </motion.div>
